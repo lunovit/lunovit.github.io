@@ -328,10 +328,10 @@ function playSound(note,utime,type) {
 			let accord = Math.floor(Math.random() * (accordsArr.length ))//выбирает аккорд из массива аккордов
 			console.log(accordsArr[(accord)]);
 			if(startG === false) {
-					n1 = Math.floor(Math.random() * numsNote+33);//33
+					n1 = Math.floor(Math.random() * numsNote+30)+6;//33
 					
 				}
-			if(n1 < numsNote+33){	//если первая нота аккорда в нижней половине нотного диапазона
+			if(n1 < (numsNote+39)/2){	//если первая нота аккорда в нижней половине нотного диапазона
 				for(let i = 0;i<accordsArr[(accord)].length;i++){ //перебирает массив нот аккорда
 					let l1 = Math.floor(Math.random() * lenNoteArr.length);
 				
