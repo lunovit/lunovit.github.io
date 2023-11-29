@@ -345,7 +345,7 @@ function playSound(note,utime,type) {
 					lenListRan += lenNoteArr[l1];
 				}
 			}else{                //если первая нота аккорда в верхней половине нотного диапазона
-				for(let i = 0;i<accordsArr[(accord)].length;i++){ //перебирает массив нот аккорда
+				for(let i = accordsArr[(accord)].length-1;i>0;i--){ //перебирает массив нот аккорда
 					let l1 = Math.floor(Math.random() * lenNoteArr.length);
 				
 					n1 -= accordsArr[(accord)][i];
